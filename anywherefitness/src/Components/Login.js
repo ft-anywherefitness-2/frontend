@@ -6,10 +6,10 @@ const Login = (props) => {
 
     return (
         <div className='login-card'>
-            <h2>Login:</h2>
+            <h2 className='login-h2'>Login:</h2>
             <div className='login-form-container'>
                 <form className='login-input'>
-                    <label htmlFor='usernameInput'>Username:<br></br>
+                    <label className='login-label' htmlFor='usernameInput'>Username:<br></br>
                     <input 
                     placeholder='Username'
                     id='username'
@@ -19,7 +19,7 @@ const Login = (props) => {
                     // onChange=''
                     />
                     </label>
-                    <label htmlFor='passwordInput'>Password:<br></br>
+                    <label className='login-label' htmlFor='passwordInput'>Password:<br></br>
                     <input
                     placeholder='Password'
                     id='password'
@@ -32,7 +32,7 @@ const Login = (props) => {
                     <button>Submit</button>
                 </form>
             </div>
-            <h3>If you do not have a username and password, click on the 'Sign Up!' button to register:</h3>
+            <h3 className='login-h3'>If you do not have a username and password, click on the 'Sign Up!' button to register:</h3>
             <button>Sign Up!</button>
         </div>
     )
