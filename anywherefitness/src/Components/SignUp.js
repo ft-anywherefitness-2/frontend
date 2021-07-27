@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Styles/Signup.css'
 import Styled from 'styled-components'
 
@@ -10,14 +10,17 @@ padding: 1rem 1rem;
 
 `
 
+const initialValues = { name:'', username: '', password: '', role: '' }
+
 
 const SignUp = (props) => {
-    const { formValues, change /* submit, disabled, errors*/} = props
+    const [formValues, setFormValues] = useState(initialValues)
 
+    // Change handler  
     const onChange = event => {
         const { name, value, type, checked } = event.target;
         const valueToUse = type === 'checkbox' ? checked:value;
-        change(name, valueToUse)
+        setFormValues({ ...formValues, [name]: valueToUse })
     }
 
 return (
