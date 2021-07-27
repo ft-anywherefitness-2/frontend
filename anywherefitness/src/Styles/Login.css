@@ -8,17 +8,17 @@
     opacity: 0.8;
 }
 
-label {
+.login-label {
     text-align: center;
     color: #E0FBFC;
 }
-.login-input{
+.login-input {
     display: flex;
     flex-direction: column;
     margin: 5% 0;
 }
 
-h3 {
+.login-h3 {
     text-align: center;
     color: #E0FBFC;
     font-size: 0.8rem;
@@ -26,7 +26,7 @@ h3 {
     margin: 0 10%;
 }
 
-button{
+.login-page-button{
     background-color: #EE6C4D;
     padding: 5%;
     color: azure;
