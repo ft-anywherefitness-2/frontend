@@ -1,0 +1,27 @@
+.login-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+    background-color: #3D5A80;
+    margin: 20% 30%;
+    padding: 4% 1%;
+    opacity: 0.8;
+}
+
+label {
+    text-align: center;
+    color: #EE6C4D;
+}
+.login-input{
+    display: flex;
+    flex-direction: column;
+    margin: 5% 0;
+}
+
+h3 {
+    text-align: center;
+    color: #E0FBFC;
+    font-size: 0.8rem;
+    padding: 2%;
+    margin: 0 10%;
+}
