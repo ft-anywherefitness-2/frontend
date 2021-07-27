@@ -1,4 +1,5 @@
 import React from 'react'
+import '../Styles/Login.css'
 
 const Login = (props) => {
 
@@ -6,26 +7,28 @@ const Login = (props) => {
     return (
         <div className='login-card'>
             <h2>Login:</h2>
-            <div className='login form-container'>
+            <div className='login-form-container'>
                 <form className='login-input'>
-                    <label htmlFor='usernameInput'>Username:</label>
+                    <label htmlFor='usernameInput'>Username:<br></br>
                     <input 
                     placeholder='Username'
                     id='username'
-                    // value={}
+                    // value=''
                     name='username'
                     type='text'
-                    // onChange={}
+                    // onChange=''
                     />
-                    <label htmlFor='passwordInput'>Password:</label>
+                    </label>
+                    <label htmlFor='passwordInput'>Password:<br></br>
                     <input
                     placeholder='Password'
                     id='password'
-                    // value={}
+                    // value=''
                     name='password'
                     type='password'
-                    // onchange={}
+                    // onchange=''
                     />
+                    </label>
                     <button>Submit</button>
                 </form>
             </div>
