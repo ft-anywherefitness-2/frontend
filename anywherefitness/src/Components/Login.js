@@ -12,19 +12,19 @@ const Login = (props) => {
                     <input 
                     placeholder='Username'
                     id='username'
-                    value={}
+                    // value={}
                     name='username'
                     type='text'
-                    onChange={}
+                    // onChange={}
                     />
                     <label htmlFor='passwordInput'>Password:</label>
                     <input
                     placeholder='Password'
                     id='password'
-                    value={}
+                    // value={}
                     name='password'
                     type='password'
-                    onchange={}
+                    // onchange={}
                     />
                     <button>Submit</button>
                 </form>
