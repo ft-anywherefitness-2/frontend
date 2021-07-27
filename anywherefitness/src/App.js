@@ -7,7 +7,7 @@ import HomePage from './Components/HomePage.js'
 import Login from './Components/Login.js'
 import SignUp from './Components/SignUp.js'
 
-const initialValues = {name:'', username: '', password: '', role: '', type:'', 'startTime': '', duration: '', intensityLevel: '', location: '', registeredAttendees: '', maxClassSize: '', classType: '', date: ''}
+const initialValues = {name:'', username: '', password: '', role: '', type:'', 'startTime': '', duration: '', intensityLevel: '', location: '', registeredAttendees: '', maxClassSize: '', classType: '', date: '' }
 
 function App() {
   const [formValues, setFormValues] = useState(initialValues)
