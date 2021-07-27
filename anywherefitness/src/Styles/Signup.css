@@ -1,14 +1,43 @@
+h2 {
+    padding: 0.5rem;
+}
+p {
+    font-size: 0.8em;
+    color: #EE6C4D;
+}
 .signup-container {
     display: flex;
-    border: 2px solid white;
     flex-direction: column;
     align-items: center;
 }
 #signup-form {
     border: 3px solid #293241;
     height: fit-content;
+    margin: 4rem 0;
+    height: fit-content;
+    width: 60%;
 }
 .signup-img {
-    background: url('https://images.unsplash.com/photo-1579126038374-6064e9370f0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1317&q=80');
-    height: 10em;
+    max-width:100%;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    padding: 1rem 1rem;
+}
+.text-input {
+    width: 50%;
+}
+.radio-button {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+.radio-label {
+    font-size: 0.9em;
+}
+.radio {
+    margin-right: 1em;
 }
