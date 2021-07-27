@@ -12,6 +12,13 @@ padding: 1rem 1rem;
 
 
 const SignUp = (props) => {
+    const { formValues, change /* submit, disabled, errors*/} = props
+
+    const onChange = event => {
+        const { name, value, type, checked } = event.target;
+        const valueToUse = type === 'checkbox' ? checked:value;
+        change(name, valueToUse)
+    }
 
 return (
     <div className='signup-container'>
@@ -20,75 +27,73 @@ return (
                 <div className='form-header-container'><h2 className='form-header'>Register Here:</h2></div>
                 <Headings>
                     <h5>Please enter your name: </h5>
-                    <p>Required.</p>
+                    <p className='required-input'>Required.</p>
                 </Headings>
                 <div className='field'>
                     <input 
-                        placeholder='Name'
                         className='text-input'
-                        id='name'
-                        // value= {}
-                        name='name'
                         type='text'
-                        // onChange={}
+                        id='name-text'
+                        name='name'
+                        value= {formValues.value}
+                        onChange={onChange}
+                        placeholder='Name'
                     />
                 </div>
             <Headings>
                 <h5>Choose a username: </h5>
-                <p>Required.</p>
+                <p className='required-input'>Required.</p>
             </Headings>
             <div className='field'>
                 <input 
-                    placeholder='Username'
                     className='text-input'
-                    id='username'
-                    // value={}
-                    name='username'
                     type='text'
-                    // onChange={}
+                    id='username'
+                    name='username'
+                    value={formValues.value}
+                    onChange={onChange}
+                    placeholder='Username'
                 />
             </div>
             <Headings>
                 <h5>Choose a password: </h5>
-                <p>Required.</p>
+                <p className='required-input'>Required.</p>
             </Headings>
             <div className='field'>
                 <input 
-                    placeholder='Password'
                     className='text-input'
-                    id='password'
-                    // value={}
-                    name='password'
                     type='text'
-                    // onChange={}
+                    id='password'
+                    name='password'
+                    value={formValues.value}
+                    onChange={onChange}
+                    placeholder='Password'
                 />
             </div>
             <Headings>
                 <h5>Please select one: </h5>
-                <p>Required.</p>
+                <p className='required-input'>Required.</p>
             </Headings>
             <div className='field radio-container'>
                 <div className='radio-button'>
                     <input 
-                        id='client'
+                        type='radio'
+                        name='role'
                         className='radio'
                         value='client'
-                        name='role'
-                        type='radio'
-                        // onChange={}
-                        // checked={}
+                        onChange={onChange}
+                        checked={formValues.role === 'client'}
                     /><label className='radio-label'>Client</label>
                 </div>
 
                 <div className='radio-button'>
                     <input 
-                        id='instructor'
+                        type='radio'
+                        name='role'
                         className='radio'
                         value='instructor'
-                        name='role'
-                        type='radio'
-                        // onChange={}
-                        // checked={}
+                        onChange={onChange}
+                        checked={formValues.role === 'instructor'}
                     /><label className='radio-label'>Instructor</label>
                 </div>
             </div>

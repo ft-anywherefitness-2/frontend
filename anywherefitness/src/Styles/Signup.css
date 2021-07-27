@@ -5,7 +5,7 @@
     background-color: rgb(61,90,128, 0.8);
 
 }
-p {
+.required-input {
     font-size: 0.6em;
     color: #EE6C4D;
 }
@@ -21,9 +21,6 @@ p {
     height: fit-content;
     width: 60%;
 }
-.signup-img {
-    max-width:100%;
-}
 .input-container {
     display: flex;
     flex-direction: column;
@@ -38,7 +35,6 @@ p {
 .radio-button {
     display: flex;
     align-items: center;
-    margin: 0.5rem 0;
 }
 .radio-label {
     font-size: 0.9em;

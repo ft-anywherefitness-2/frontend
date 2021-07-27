@@ -1,12 +1,20 @@
 import './App.css';
-import { BrowserRouter as Router, Switch, Route, NavLink } from 'react-router-dom';
+import { useState } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import NavBar from './Components/NavBar.js'
 import HomePage from './Components/HomePage.js'
 import Login from './Components/Login.js'
 import SignUp from './Components/SignUp.js'
 
+const initialValues = {name:'', username: '', password: '', role: '', type:'', 'startTime': '', duration: '', intensityLevel: '', location: '', registeredAttendees: '', maxClassSize: '', classType: '', date: ''}
+
 function App() {
+  const [formValues, setFormValues] = useState(initialValues)
+
+  // HANDLERS /////////////////////////////////
+  const inputChange = (name, value) => setFormValues({ ...formValues, [name]: value })
+
   return (
     <>
       <Router>
@@ -15,7 +23,15 @@ function App() {
 
     <div className="pages">
       <Switch>
-        <Route exact path="/signup" component={SignUp}/>
+        <Route exact path="/signup">
+          <SignUp
+            formValues={formValues}
+            change={inputChange}
+            // submit={}
+            // disabled={}
+            // errors={}
+          />
+        </Route>
         <Route exact path="/login" component={Login}/>
         <Route exact path="/" component={HomePage} />
       </Switch>
