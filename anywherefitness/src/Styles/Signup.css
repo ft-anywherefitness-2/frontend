@@ -1,8 +1,12 @@
-h2 {
+.form-header {
     padding: 0.5rem;
 }
+.form-header-container {
+    background-color: rgb(61,90,128, 0.8);
+
+}
 p {
-    font-size: 0.8em;
+    font-size: 0.6em;
     color: #EE6C4D;
 }
 .signup-container {
@@ -11,9 +15,9 @@ p {
     align-items: center;
 }
 #signup-form {
-    border: 3px solid #293241;
+    border: 3px solid #E0FBFC;
     height: fit-content;
-    margin: 4rem 0;
+    margin: 4rem 0 20rem 0;
     height: fit-content;
     width: 60%;
 }
@@ -26,6 +30,7 @@ p {
 }
 .field {
     padding: 1rem 1rem;
+    background-color: rgb(152,193,217,0.8);
 }
 .text-input {
     width: 50%;
@@ -37,6 +42,7 @@ p {
 }
 .radio-label {
     font-size: 0.9em;
+    color: white;
 }
 .radio {
     margin-right: 1em;

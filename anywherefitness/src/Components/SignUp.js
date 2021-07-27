@@ -3,10 +3,11 @@ import '../Styles/Signup.css'
 import Styled from 'styled-components'
 
 const Headings = Styled.div`
-background-color: #293241;
+background-color: rgb(61,90,128, 0.8);
 padding: 0.5rem 1rem;
-color: #E0FBFC;
+color: white;
 padding: 1rem 1rem;
+
 `
 
 
@@ -15,9 +16,8 @@ const SignUp = (props) => {
 return (
     <div className='signup-container'>
         <form id='signup-form'>
-        <img className='signup-img' src='https://images.unsplash.com/photo-1579126038374-6064e9370f0f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1317&q=80' alt='yoga ocean view'/>
             <div className='input-container'>
-                <h2>Register Here:</h2>
+                <div className='form-header-container'><h2 className='form-header'>Register Here:</h2></div>
                 <Headings>
                     <h5>Please enter your name: </h5>
                     <p>Required.</p>
@@ -93,7 +93,7 @@ return (
                 </div>
             </div>
             
-            <div>
+            <div className='field'>
                 <button>Submit</button>
             </div>
         </div>
