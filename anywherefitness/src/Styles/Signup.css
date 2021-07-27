@@ -1,0 +1,45 @@
+.form-header {
+    padding: 0.5rem;
+}
+.form-header-container {
+    background-color: rgb(61,90,128, 0.8);
+
+}
+.required-input {
+    font-size: 0.6em;
+    color: #EE6C4D;
+}
+.signup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#signup-form {
+    border: 3px solid #E0FBFC;
+    height: fit-content;
+    margin: 4rem 0 20rem 0;
+    height: fit-content;
+    width: 60%;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    padding: 1rem 1rem;
+    background-color: rgb(152,193,217,0.8);
+}
+.text-input {
+    width: 50%;
+}
+.radio-button {
+    display: flex;
+    align-items: center;
+}
+.radio-label {
+    font-size: 0.9em;
+    color: white;
+}
+.radio {
+    margin-right: 1em;
+}
