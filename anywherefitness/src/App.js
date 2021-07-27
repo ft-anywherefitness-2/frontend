@@ -23,7 +23,7 @@ function App() {
 
     <div className="pages">
       <Switch>
-        <Route exact path="/signup">
+        <Route exact path="/signup" component={SignUp}   >
           <SignUp
             formValues={formValues}
             change={inputChange}
@@ -31,7 +31,8 @@ function App() {
             // disabled={}
             // errors={}
           />
-        </Route>
+          </Route>
+        
         <Route exact path="/login" component={Login}/>
         <Route exact path="/" component={HomePage} />
       </Switch>
