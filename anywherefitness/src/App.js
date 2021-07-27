@@ -21,6 +21,11 @@ function App() {
       </Switch>
     </div>
     </Router>
+      <footer>
+        <h3>Anywhere Fitness Copyright 2021 </h3> <br/>
+        <p style={{color:"#EE6C4D"}}>Collaborators: Bradly Lewis, Bryan Guner, Chelsea Ceballos, <br/> Kat Yevsukov, Teresa Franxman  </p>
+      </footer>
+
     </>
   );
 }
