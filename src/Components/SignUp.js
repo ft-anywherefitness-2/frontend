@@ -1,30 +1,59 @@
 import React, { useState } from "react";
 import "../Styles/Signup.css";
 import Styled from "styled-components";
+import { useHistory } from 'react-router';
+import axios from 'axios';
 
 const Headings = Styled.div`
 background-color: rgb(61,90,128, 0.8);
 padding: 0.5rem 1rem;
 color: white;
 padding: 1rem 1rem;
-
 `;
 
-const initialValues = { name: "", username: "", password: "", role: "" };
+const initialValues = { 
+  name: "", 
+  username: "", 
+  password: "", 
+  role: "" 
+};
 
 const SignUp = (props) => {
   const [formValues, setFormValues] = useState(initialValues);
+  const { push } = useHistory();
 
+  
   // Change handler
   const onChange = (event) => {
+   
     const { name, value, type, checked } = event.target;
     const valueToUse = type === "checkbox" ? checked : value;
     setFormValues({ ...formValues, [name]: valueToUse });
+    console.log(formValues)
   };
+
+  const handleSignupClick = (e) => {
+    e.preventDefault();
+    const newUser = {
+      name: formValues.name.trim(),
+      username: formValues.username.trim(),
+      password: formValues.password.trim(),
+      // role:  parseInt(formValues.role)
+      role:  formValues.role
+    };
+
+    axios
+    .post('https://frontend-iota.vercel.app/api/auth/register', newUser)
+    .then(res => {
+      console.log(res.data)
+      push('/login')
+    })
+    .catch((err) => console.log(err, "bouta kms"))
+  }
 
   return (
     <div className="signup-container">
-      <form id="signup-form">
+      <form id="signup-form" onSubmit={handleSignupClick}>
         <div className="input-container">
           <div className="form-header-container">
             <h2 className="form-header">Register Here:</h2>
