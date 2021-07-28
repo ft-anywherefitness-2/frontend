@@ -1,24 +1,27 @@
-.instructor-class-container {
+.client-class-container {
     display: flex;
     border: 2px solid red;
     flex-wrap: wrap;
-    margin: 2em;
+    margin: 2%;
     justify-content: center;
+    height: 40%;
 }
-.instructor-class {
+.client-class {
     background-color: rgb(61,90,128, 0.8);
-    height: 10em;
+    height: 11em;
     width: 15em;
     color: white;
     margin: 1.2em;
+    text-align: center;
 }
-.instructor-class-header {
+.client-class-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.instructor-class-content-container {
+.client-class-content-container {
     padding: 2%;
+    
 }
 /* ***************** BUTTON *********************** */
 .btn:link,
