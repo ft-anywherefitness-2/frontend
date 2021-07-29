@@ -31,7 +31,7 @@ const ClientClasses = () => {
                             <p>{item.location}</p>
                         </div>
                         <div className='text-box'>
-                            <a href="#" class="btn btn-white btn-animate">click me</a>
+                            <a href={`/user/class/${item.id}`} style={{marginLeft:"-42px", marginTop:"10px"}}class="btn btn-white btn-animate">details</a>
                         </div>
                     </div>
                 </div>
@@ -42,4 +42,6 @@ const ClientClasses = () => {
 )
 }
 
-export default ClientClasses
+export default ClientClasses;
+
+

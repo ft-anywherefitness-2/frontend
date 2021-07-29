@@ -1,6 +1,7 @@
 const dummyData = [
   {
     id: 1,
+    instructor_name: "Ken",
     type: "Yoga",
     date: "Aug 1",
     time: "11:00",
@@ -12,6 +13,7 @@ const dummyData = [
   },
   {
     id: 2,
+    instructor_name: "Bob",
     type: "Kickboxing",
     date: "Aug 2",
     time: "12:30",
@@ -23,6 +25,7 @@ const dummyData = [
   },
   {
     id: 3,
+    instructor_name: "Carl",
     type: "Weightlifting",
     date: "Aug 7",
     time: "2:00",
@@ -34,6 +37,7 @@ const dummyData = [
   },
   {
     id: 4,
+    instructor_name: "Kasey",
     type: "Biking",
     date: "Aug 6",
     time: "8:00",
@@ -45,6 +49,7 @@ const dummyData = [
   },
   {
     id: 2,
+    instructor_name: "Michelle",
     type: "Swimming",
     date: "Aug 4",
     time: "5:00",
