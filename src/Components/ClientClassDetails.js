@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import dummyData from "../dummy-data/classes.js";
-import  { useHistory } from 'react-router';
+
+// ⛳️⛳️This Component should render each individual Class 
 
 // breaks when you name argument 'class'
-const ClientClasses = (props) => {
+const ClientClassDetails = (props) => {
   const [classes] = useState(dummyData);
-  const { push } = useHistory();
+  
 
 
   return (
@@ -20,17 +21,12 @@ const ClientClasses = (props) => {
                 <p>Location: {item.location}</p>
                 <p>Instructor: {item.instructor_name}</p>
                  <p>Intensity: {item.intensity}</p>
-               {/* <p>Date: {item.capacity}</p>
+               <p>Date: {item.capacity}</p>
                 <p>Class Time: {item.time}</p>
                 <p>Class Duration: {item.duration}</p>
-                <p>Registered Participants: {item.registered}</p> */}
+                <p>Registered Participants: {item.registered}</p>
               </div>
-              <div className="text-box">
-                
-                <a  href={`/user/class/${item.id}`}  class="btn btn-white btn-animate" >
-                  details
-                </a>
-              </div>
+              
             </div>
           </div>
         );
@@ -39,6 +35,5 @@ const ClientClasses = (props) => {
   );
 };
 
-export default ClientClasses;
-
+export default ClientClassDetails;
 
