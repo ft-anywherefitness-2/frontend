@@ -38,17 +38,21 @@ const SignUp = (props) => {
       name: formValues.name.trim(),
       username: formValues.username.trim(),
       password: formValues.password.trim(),
-      // role:  parseInt(formValues.role)
       role:  formValues.role
     };
 
-    axios
-    .post('https://frontend-iota.vercel.app/api/auth/register', newUser)
+    axios.create({
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+         "Access-Control-Allow-Origin": '*' 
+      }
+    })
+    .post('https://secret-peak-42801.herokuapp.com//api/auth/register', newUser)
     .then(res => {
       console.log(res.data)
       push('/login')
     })
-    .catch((err) => console.log(err, "bouta kms"))
+    .catch((err) => console.log(err, "err"))
   }
 
   return (
