@@ -61,14 +61,14 @@ const Login = (props) => {
               onChange={handleChanges}
             />
           </label>
-          <button>Submit</button>
+          <button className='login-page-button'>Submit</button>
         </form>
       </div>
       <h3 className="login-h3">
         If you do not have a username and password, click on the 'Sign Up!'
         button to register:
       </h3>
-      <button>Sign Up!</button>
+      <button className='login-page-button'>Sign Up!</button>
     </div>
   );
 };

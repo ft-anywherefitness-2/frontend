@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./Components/NavBar.js";
 import HomePage from "./Components/HomePage.js";
 import Login from "./Components/Login.js";
-import SignUp from "./Components/SignUp.js";
+// import SignUp from "./Components/SignUp.js";
 // import InstructorPage from "./Components/InstructorPage.js";
+import ClientPage from "./Components/ClientPage.js"
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
 
         <div className="pages">
           <Switch>
-            {/* <Route exact path="/signup" component={InstructorPage} /> */}
-            <Route exact path="/signup" component={SignUp} />
+            <Route exact path="/signup" component={ClientPage} />
+            {/* <Route exact path="/signup" component={SignUp} /> */}
             <Route exact path="/login" component={Login} />
             <Route exact path="/" component={HomePage} />
           </Switch>
