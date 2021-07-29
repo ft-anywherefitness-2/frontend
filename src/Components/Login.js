@@ -29,11 +29,15 @@ const Login = (props) => {
     axiosWithAuth()
     .post('/api/auth/login', formValues)
     .then((res) => {
-      push('/classes') /// ummm not sure where to push too yet. 
+      push('/user/classes') /// ummm not sure where to push too yet. 
     })
     .catch((err)=> console.log(err));
   };
 
+  const handleBtn = (e) => {
+    e.preventDefault();
+    push('/signup')
+  }
   return (
     <div className="login-card">
       <h2 className="login-h2">Login:</h2>
@@ -68,7 +72,7 @@ const Login = (props) => {
         If you do not have a username and password, click on the 'Sign Up!'
         button to register:
       </h3>
-      <button className='login-page-button'>Sign Up!</button>
+      <button onClick={handleBtn} className='login-page-button'>Sign Up!</button>
     </div>
   );
 };
