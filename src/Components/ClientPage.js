@@ -8,6 +8,7 @@ const ClientPage = () => {
 
     return (
         <div className='client-page-container'>
+            
             <ClientClasses />
         </div>
     )

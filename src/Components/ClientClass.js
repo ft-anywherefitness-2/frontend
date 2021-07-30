@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import dummyData from '../dummy-data/classes.js'
+import '../Styles/ClientPage.css'
 
 // breaks when you name argument 'class'
 const ClientClasses = () => {
@@ -9,8 +10,9 @@ const ClientClasses = () => {
 
     return (
         <div className='client-page-container'>
+          <h2 className='class-header'>Available Classes</h2>
             <div className='searchBar'>
-                <input type="text" placeholder="Search..." onChange={event => {setSearchTerm(event.target.value)}}/>
+                <input type="text" placeholder="Search for a class..." onChange={event => {setSearchTerm(event.target.value)}}/>
             </div>
             <div className='client-class-container'>
             {classes.filter((item) => {

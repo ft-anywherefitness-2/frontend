@@ -10,10 +10,13 @@ const ClientClassDetails = (props) => {
 
 
   return (
+    <div className='details-of-classes-page'>
+    <h2 className='details-header'>Class Details</h2>
     <div className="class-container">
+      
       {classes.map((item) => {
         return (
-          <div className="class instructor-class">
+          <div className="class-box">
             <div className="class-content-container">
               <div className="class-header">
                 <h3>{item.type}</h3>
@@ -31,6 +34,7 @@ const ClientClassDetails = (props) => {
           </div>
         );
       })}
+    </div>
     </div>
   );
 };
