@@ -1,4 +1,6 @@
-
+.class-header{
+  text-align: center;
+}
 
 .searchBar{
     display: flex;
@@ -16,7 +18,8 @@
     flex-wrap: wrap;
     margin: 2%;
     justify-content: center;
-    height: 40%;
+    margin: 0 auto -100px;
+    overflow: hidden;
 }
 .client-class {
     background-color: rgb(61,90,128, 0.8);
@@ -34,6 +37,21 @@
 .client-class-content-container {
     padding: 2%;
     
+}
+
+.class-container {
+    display:flex;  
+   
+}
+
+.class-box{
+    background-color: #e0fbfc;
+    margin: 2%;
+    border-radius: 10px;
+    font-size: medium;
+    font-weight: bold;
+    padding: 2% 5%;
+    height:fit-content;
 }
 /* ***************** BUTTON *********************** */
 .btn:link,
