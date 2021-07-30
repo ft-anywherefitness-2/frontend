@@ -14,7 +14,6 @@
 
 .client-class-container {
     display: flex;
-    border: 2px solid red;
     flex-wrap: wrap;
     margin: 2%;
     justify-content: center;
@@ -41,19 +40,29 @@
 
 .class-container {
     display:flex;  
-   
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .class-box{
-    background-color: #e0fbfc;
+    background-color: rgb(224, 251, 252, 0.8);
     margin: 2%;
     border-radius: 10px;
     font-size: medium;
     font-weight: bold;
     padding: 2% 5%;
     height:fit-content;
+    color: rgb(61,90,128);
+    border: 1px solid rgb(61,90,128);
+    box-shadow: 10px -16px rgb(61,90,128);
 }
-/* ***************** BUTTON *********************** */
+
+.details-header{
+    text-align: center;
+}
+/* ****
+
+************* BUTTON *********************** */
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
